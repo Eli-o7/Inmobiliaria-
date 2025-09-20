@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.Lugares-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.Lugares-grid figure {
+  flex: 1;
+  margin: 0;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.Lugares-grid figure:hover {
+  transform: scale(1.03);
+}
+
+.Lugares-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Lugares-grid figcaption {
+  padding: 28px;
+  font-size: 0.95em;
+  text-align: center;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: rgb(255, 255, 255); /* Cambia el color de fondo */
+  }
+  .Lugares-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+
+header {
+  display: flex; /* Usa flexbox para alinear elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #66382d; /* Color de fondo */
+  color: white; /* Color del texto */
+}
+
+/* Estilo del menú de navegación */
+nav {
+  position: absolute; /* Posición absoluta */
+  top: 50px; /* Distancia desde la parte superior */
+  left: 20px; /* Distancia desde la izquierda */
+  background-color: #f5f4f3; /* Color de fondo */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo de la lista de navegación */
+nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 10px; /* Espaciado interno */
+}
+
+/* Estilo de los elementos de la lista */
+nav ul li {
+  margin: 5px 10px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor a "puntero" */
+}
+
+/* Estilo al pasar el cursor sobre los elementos de la lista */
+nav ul li:hover {
+  background-color: #f0e6e2; /* Cambia el color de fondo */
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+  display: none; /* Oculta el elemento */
+}
+
+/* Estilo del ícono del menú */
+.menu-icon {
+  font-size: 24px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a "puntero" */
+}
+
+.info {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  font-size: 0.95em;
+  color: #616161;
+}
